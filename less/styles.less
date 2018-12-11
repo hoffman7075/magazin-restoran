@@ -39,6 +39,10 @@ a {
   .justify-content(space-between);
 }
 
+.flex-justify-center {
+  .justify-content(center);
+}
+
 header {
   padding: 13px 0 10px;
 
@@ -200,9 +204,52 @@ header {
       img {
         margin-bottom: 12px;
       }
+    }
 
-      &:hover {
+    &:hover {
+      a {
         color: @gray-color;
+      }
+    }
+  }
+}
+
+.main-banner {
+  padding: 10px 0;
+  width: 100%;
+
+  &__row {
+    &.row-50 {
+      height: 50%;
+    }
+  }
+
+  &__col {
+    width: 50%;
+
+    &.col-wrapper {
+      height: 735px;
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+    }
+
+    .main-banner__text {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      width: 100%;
+      height: 100px;
+      padding: 20px 30px;
+
+      &.center-text {
+        background-color: rgba(93, 123, 152, 0.8);
+        padding: 0 70px;
+        width: 67%;
+        min-height: 200px;
       }
     }
   }
