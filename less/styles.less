@@ -19,8 +19,13 @@ a {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
   width: 1340px;
+
+  &.narrow {
+    width: 1090px;
+  }
 }
 
 .flex {
@@ -41,6 +46,82 @@ a {
 
 .flex-justify-center {
   .justify-content(center);
+}
+
+.tabs {
+  &__caption {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+
+    li {
+      font-size: 24px;
+      color: rgb(206, 215, 224);
+      text-transform: uppercase;
+      font-weight: 300;
+      cursor: pointer;
+      padding-bottom: 13px;
+      margin: 0 35px;
+
+      &.active {
+        padding-left: 18px;
+        padding-right: 18px;
+        color: @blue-color;
+        font-weight: 600;
+        font-size: 30px;
+        border-bottom: 2px solid @blue-color;
+      }
+    }
+  }
+  &__content {
+    display: none; /* по умолчанию прячем все блоки */
+  }
+  &__content.active {
+    display: block; /* по умолчанию показываем нужный блок */
+  }
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 30px;
+  .owl-dot {
+    margin: 0 10px;
+    span {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #ced7e0;
+      border-radius: 50%;
+    }
+
+    &.active {
+      span {
+        width: 13px;
+        height: 13px;
+        background-color: #5d7b98;
+      }
+    }
+  }
+}
+
+.btn {
+  color: @blue-color;
+  border: 1px solid @blue-color;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 18px 95px;
+  width: 298px;
+  height: 53px;
+  .flex-block();
+
+  &:hover {
+    color: @gray-color;
+    border: 1px solid @gray-color;
+  }
 }
 
 header {
@@ -78,6 +159,7 @@ header {
           left: 50%;
           transform: translateX(-50%);
           padding-top: 15px;
+          z-index: 1;
 
           > .submenu {
             background: @yellow-color;
@@ -215,7 +297,7 @@ header {
 }
 
 .main-banner {
-  padding: 10px 0;
+  padding: 10px 0 35px 0;
   width: 100%;
 
   &__row {
@@ -226,6 +308,7 @@ header {
 
   &__col {
     width: 50%;
+    background-repeat: no-repeat;
 
     &.col-wrapper {
       height: 735px;
@@ -250,6 +333,148 @@ header {
         padding: 0 70px;
         width: 67%;
         min-height: 200px;
+      }
+    }
+  }
+}
+
+.main-tabs {
+  padding: 35px 0;
+}
+
+.catalog-product {
+  text-align: center;
+
+  > a {
+    display: block;
+
+    img {
+      border: 1px solid #ced7e0;
+      max-height: 100%;
+      width: auto !important;
+      margin: 0 auto;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  &__image {
+    height: 315px;
+  }
+
+  &__name {
+    margin-top: 30px;
+    color: #363636;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__avaliable {
+    color: #363636;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 8px;
+  }
+
+  &__price {
+    font-size: 30px;
+    color: @blue-color;
+    margin-top: 13px;
+  }
+}
+
+.main-about {
+  background: @yellow-color;
+  padding: 80px 0;
+  margin-top: 150px;
+  margin-bottom: 130px;
+  height: 500px;
+
+  &__h1 {
+    margin: 0;
+    color: @gray-color;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    color: @gray-color;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    width: 50%;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-25%);
+  }
+}
+
+.instagram {
+  &__row {
+    margin: 15px 0;
+  }
+  &__photo {
+    width: 260px;
+    height: 260px;
+    &.account-info {
+      width: 260px;
+      height: 260px;
+      background: #eff3fa;
+
+      .instagram-icon {
+        margin: 0 15px;
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+      }
+
+      .follow {
+        text-align: center;
+        width: 75px;
+        span {
+          display: block;
+          color: @blue-color;
+          text-transform: uppercase;
+        }
+        &__count {
+          font-weight: 600;
+          font-size: 18px;
+        }
+        &__title {
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &.text-subscribe {
+      transform: rotate(-90deg);
+      a {
+        transform: translateX(-25%);
+      }
+      span {
+        font-weight: 600;
+        font-size: 18px;
+        color: @gray-color;
+        display: block;
+        text-align: right;
+        text-transform: uppercase;
+      }
+
+      .text-subscribe__account {
+        color: @blue-color;
+        font-weight: normal;
       }
     }
   }

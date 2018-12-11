@@ -12,8 +12,12 @@ a {
   outline: none;
 }
 .container {
+  position: relative;
   margin: 0 auto;
   width: 1340px;
+}
+.container.narrow {
+  width: 1090px;
 }
 .flex {
   display: -ms-flexbox;
@@ -48,6 +52,75 @@ a {
   -webkit-justify-content: center;
   justify-content: center;
 }
+.tabs__caption {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.tabs__caption li {
+  font-size: 24px;
+  color: #ced7e0;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  padding-bottom: 13px;
+  margin: 0 35px;
+}
+.tabs__caption li.active {
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #5c7b97;
+  font-weight: 600;
+  font-size: 30px;
+  border-bottom: 2px solid #5c7b97;
+}
+.tabs__content {
+  display: none;
+  /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.owl-dots .owl-dot {
+  margin: 0 10px;
+}
+.owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ced7e0;
+  border-radius: 50%;
+}
+.owl-dots .owl-dot.active span {
+  width: 13px;
+  height: 13px;
+  background-color: #5d7b98;
+}
+.btn {
+  color: #5c7b97;
+  border: 1px solid #5c7b97;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 18px 95px;
+  width: 298px;
+  height: 53px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.btn:hover {
+  color: #58585a;
+  border: 1px solid #58585a;
+}
 header {
   padding: 13px 0 10px;
 }
@@ -77,6 +150,7 @@ header .header-nav ul li.has-submenu > .submenu-wrapper {
   left: 50%;
   transform: translateX(-50%);
   padding-top: 15px;
+  z-index: 1;
 }
 header .header-nav ul li.has-submenu > .submenu-wrapper > .submenu {
   background: #f7f0e6;
@@ -180,7 +254,7 @@ header .header-cart__total {
   color: #58585a;
 }
 .main-banner {
-  padding: 10px 0;
+  padding: 10px 0 35px 0;
   width: 100%;
 }
 .main-banner__row.row-50 {
@@ -188,6 +262,7 @@ header .header-cart__total {
 }
 .main-banner__col {
   width: 50%;
+  background-repeat: no-repeat;
 }
 .main-banner__col.col-wrapper {
   height: 735px;
@@ -210,4 +285,124 @@ header .header-cart__total {
   padding: 0 70px;
   width: 67%;
   min-height: 200px;
+}
+.main-tabs {
+  padding: 35px 0;
+}
+.catalog-product {
+  text-align: center;
+}
+.catalog-product > a {
+  display: block;
+}
+.catalog-product > a img {
+  border: 1px solid #ced7e0;
+  max-height: 100%;
+  width: auto !important;
+  margin: 0 auto;
+}
+.catalog-product span {
+  display: block;
+}
+.catalog-product__image {
+  height: 315px;
+}
+.catalog-product__name {
+  margin-top: 30px;
+  color: #363636;
+  font-size: 18px;
+  font-weight: 600;
+}
+.catalog-product__avaliable {
+  color: #363636;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 8px;
+}
+.catalog-product__price {
+  font-size: 30px;
+  color: #5c7b97;
+  margin-top: 13px;
+}
+.main-about {
+  background: #f7f0e6;
+  padding: 80px 0;
+  margin-top: 150px;
+  margin-bottom: 130px;
+  height: 500px;
+}
+.main-about__h1 {
+  margin: 0;
+  color: #58585a;
+  font-size: 30px;
+  font-weight: 600;
+}
+.main-about p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #58585a;
+  margin-bottom: 30px;
+}
+.main-about__info {
+  width: 50%;
+}
+.main-about__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-25%);
+}
+.instagram__row {
+  margin: 15px 0;
+}
+.instagram__photo {
+  width: 260px;
+  height: 260px;
+}
+.instagram__photo.account-info {
+  width: 260px;
+  height: 260px;
+  background: #eff3fa;
+}
+.instagram__photo.account-info .instagram-icon {
+  margin: 0 15px;
+}
+.instagram__photo.account-info a {
+  width: 100%;
+  height: 100%;
+}
+.instagram__photo.account-info .follow {
+  text-align: center;
+  width: 75px;
+}
+.instagram__photo.account-info .follow span {
+  display: block;
+  color: #5c7b97;
+  text-transform: uppercase;
+}
+.instagram__photo.account-info .follow__count {
+  font-weight: 600;
+  font-size: 18px;
+}
+.instagram__photo.account-info .follow__title {
+  font-weight: 300;
+  font-size: 12px;
+}
+.instagram__photo.text-subscribe {
+  transform: rotate(-90deg);
+}
+.instagram__photo.text-subscribe a {
+  transform: translateX(-25%);
+}
+.instagram__photo.text-subscribe span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #58585a;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+}
+.instagram__photo.text-subscribe .text-subscribe__account {
+  color: #5c7b97;
+  font-weight: normal;
 }
