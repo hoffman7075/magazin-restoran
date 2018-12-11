@@ -1,2 +1,174 @@
 // out: ../css/styles.css
 @import "mixins.less";
+
+@gray-color: #58585a;
+@blue-color: #5c7b97;
+@yellow-color: #f7f0e6;
+
+body {
+  background-color: #fff;
+  font-family: "Ubuntu", "Sans serif";
+}
+
+body * {
+  .border-box();
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1340px;
+}
+
+.flex {
+  .flex-block();
+}
+
+.flex-va-center {
+  .align-items(center);
+}
+
+.flex-justify-between {
+  .justify-content(space-between);
+}
+
+header {
+  padding: 13px 0 10px 0;
+  .header-nav {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          color: @gray-color;
+          font-weight: 600;
+          font-size: 14px;
+          text-transform: uppercase;
+          position: relative;
+        }
+
+        &:hover {
+          > a {
+            color: @blue-color;
+          }
+        }
+      }
+
+      li.has-submenu {
+        position: relative;
+        > .submenu-wrapper {
+          display: none;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          padding-top: 15px;
+          > .submenu {
+            background: @yellow-color;
+            padding: 30px;
+            width: 170px;
+            > li {
+              margin: 8px 0;
+              &:first-child {
+                margin-top: 0;
+              }
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              &:hover {
+                a::before {
+                  content: "";
+                  width: 4px;
+                  height: 100%;
+                  background: @blue-color;
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  left: -30px;
+                }
+              }
+
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              top: 8px;
+              right: 30px;
+              width: 0px;
+              height: 0;
+              border-left: 7px solid transparent;
+              border-right: 7px solid transparent;
+              border-bottom: 7px solid @yellow-color;
+            }
+          }
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          background-image: url(/img/header-arrows-sprite.png);
+          background-repeat: no-repeat;
+          background-position: -5px -5px;
+          width: 14px;
+          height: 9px;
+        }
+
+        &:hover {
+          > .submenu-wrapper {
+            display: block;
+          }
+          &::after {
+            background-position: -29px -5px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-contacts {
+    text-align: right;
+
+    &__tel {
+      font-weight: 600;
+      color: @gray-color;
+      font-size: 22px;
+      &:hover {
+        color: @blue-color;
+      }
+    }
+
+    &__mail {
+      font-size: 12px;
+      color: @blue-color;
+      font-weight: 300;
+    }
+  }
+
+  .header-cart {
+    &__count {
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      border-radius: 50%;
+      background-color: @blue-color;
+      width: 33px;
+      margin: 0 10px;
+      height: 33px;
+      text-align: center;
+      line-height: 33px;
+    }
+
+    &__total {
+      font-size: 14px;
+      font-weight: 600;
+      color: @gray-color;
+    }
+  }
+}

@@ -7,12 +7,71 @@
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="//necolas.github.io/normalize.css/latest/normalize.css">
+    <!-- Ubuntu Font -->
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
 
     <title>Главная</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <div class="container flex flex-va-center flex-justify-between">
+        <nav class="header-nav">
+          <ul class="flex">
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li class="has-submenu">
+              <a href="#">О компании</a>
+              <div class="submenu-wrapper">
+                <ul class="submenu">
+                  <li>
+                    <a href="#">Пункт 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Пункт 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">Установка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-logo">
+          <a href="/">
+            <img src="/img/header-logo.png" alt="Логотип">
+          </a>
+        </div>
+        <div class="header-search">
+          <a href="#">
+            <img src="/img/header-search.png" alt="Поиск">
+          </a>
+        </div>
+        <div class="header-contacts">
+          <a href="tel:+74957878785" class="header-contacts__tel">
+            +7 (495) 78-78-78-5
+          </a>
+          <br>
+          <a href="mailto:info@magazin-restoran.ru" class="header-contacts__mail">
+            info@magazin-restoran.ru
+          </a>
+        </div>
+        <div class="header-cart flex flex-va-center">
+          <img src="/img/header-cart.png" alt="Корзина">
+          <span class="header-cart__count">3</span>
+          <span class="header-cart__total">32 564 Р</span>
+        </div>
+      </div>
+    </header>
 
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
