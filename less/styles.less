@@ -1,6 +1,5 @@
 // out: ../css/styles.css
 @import "mixins.less";
-
 @gray-color: #58585a;
 @blue-color: #5c7b97;
 @yellow-color: #f7f0e6;
@@ -32,12 +31,17 @@ a {
   .align-items(center);
 }
 
+.flex-va-bottom {
+  .align-items(flex-end);
+}
+
 .flex-justify-between {
   .justify-content(space-between);
 }
 
 header {
-  padding: 13px 0 10px 0;
+  padding: 13px 0 10px;
+
   .header-nav {
     ul {
       list-style: none;
@@ -63,21 +67,26 @@ header {
 
       li.has-submenu {
         position: relative;
+
         > .submenu-wrapper {
           display: none;
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
           padding-top: 15px;
+
           > .submenu {
             background: @yellow-color;
             padding: 30px;
             width: 170px;
+
             > li {
               margin: 8px 0;
+
               &:first-child {
                 margin-top: 0;
               }
+
               &:last-child {
                 margin-bottom: 0;
               }
@@ -94,14 +103,14 @@ header {
                   left: -30px;
                 }
               }
-
             }
+
             &:before {
               content: "";
               position: absolute;
               top: 8px;
               right: 30px;
-              width: 0px;
+              width: 0;
               height: 0;
               border-left: 7px solid transparent;
               border-right: 7px solid transparent;
@@ -113,7 +122,7 @@ header {
         &::after {
           content: "";
           display: inline-block;
-          background-image: url(/img/header-arrows-sprite.png);
+          background-image: url("/img/header-arrows-sprite.png");
           background-repeat: no-repeat;
           background-position: -5px -5px;
           width: 14px;
@@ -124,6 +133,7 @@ header {
           > .submenu-wrapper {
             display: block;
           }
+
           &::after {
             background-position: -29px -5px;
           }
@@ -139,6 +149,7 @@ header {
       font-weight: 600;
       color: @gray-color;
       font-size: 22px;
+
       &:hover {
         color: @blue-color;
       }
@@ -169,6 +180,30 @@ header {
       font-size: 14px;
       font-weight: 600;
       color: @gray-color;
+    }
+  }
+}
+
+.products-header {
+  background: @yellow-color;
+  padding: 15px 0;
+
+  &__product {
+    a {
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      color: @blue-color;
+
+      img {
+        margin-bottom: 12px;
+      }
+
+      &:hover {
+        color: @gray-color;
+      }
     }
   }
 }
