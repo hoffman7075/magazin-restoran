@@ -59,6 +59,10 @@ a {
   .justify-content(center);
 }
 
+.text-center {
+  text-align: center;
+}
+
 h2 {
   font-weight: 600;
   font-size: 30px;
@@ -93,19 +97,25 @@ h2 {
       }
     }
   }
+
   &__content {
-    display: none; /* по умолчанию прячем все блоки */
+    display: none;
+    /* по умолчанию прячем все блоки */
   }
+
   &__content.active {
-    display: block; /* по умолчанию показываем нужный блок */
+    display: block;
+    /* по умолчанию показываем нужный блок */
   }
 }
 
 .owl-dots {
   text-align: center;
   margin-top: 30px;
+
   .owl-dot {
     margin: 0 10px;
+
     span {
       width: 10px;
       height: 10px;
@@ -184,6 +194,7 @@ header {
           transform: translateX(-50%);
           padding-top: 15px;
           z-index: 1;
+          box-shadow: 0 17px 24px 0 rgba(0, 0, 0, 0.17);
 
           > .submenu {
             background: @yellow-color;
@@ -320,8 +331,77 @@ header {
   }
 }
 
+footer {
+  background: @blue-color;
+  padding: 85px 0 25px;
+  color: #fff;
+
+  .footer-col {
+    width: 20%;
+  }
+
+  .footer-col__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    height: 16px;
+  }
+
+  .footer__menu {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    li {
+      a {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        color: #fff;
+
+        &:hover {
+          color: @gray-color;
+        }
+      }
+    }
+  }
+
+  .footer__contacts {
+    margin-top: 15px;
+
+    a {
+      color: #fff;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .footer__tel {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .footer__mail {
+      font-size: 12px;
+      font-weight: 300;
+      text-decoration: underline;
+    }
+
+    .footer__address {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
 .main-banner {
-  padding: 10px 0 35px 0;
+  padding: 10px 0 35px;
   width: 100%;
 
   &__row {
@@ -444,12 +524,15 @@ header {
 
 .instagram {
   margin-bottom: 100px;
+
   &__row {
     margin: 15px 0;
   }
+
   &__photo {
     width: 260px;
     height: 260px;
+
     &.account-info {
       width: 260px;
       height: 260px;
@@ -467,15 +550,18 @@ header {
       .follow {
         text-align: center;
         width: 75px;
+
         span {
           display: block;
           color: @blue-color;
           text-transform: uppercase;
         }
+
         &__count {
           font-weight: 600;
           font-size: 18px;
         }
+
         &__title {
           font-weight: 300;
           font-size: 12px;
@@ -485,9 +571,11 @@ header {
 
     &.text-subscribe {
       transform: rotate(-90deg);
+
       a {
         transform: translateX(-25%);
       }
+
       span {
         font-weight: 600;
         font-size: 18px;
@@ -509,9 +597,9 @@ header {
   margin-top: 40px;
   margin-bottom: 70px;
 }
+
 .clients-slider {
   a {
-
     img {
       &.hover {
         display: none;
@@ -523,6 +611,7 @@ header {
         &.preview {
           display: none;
         }
+
         &.hover {
           display: block;
         }
