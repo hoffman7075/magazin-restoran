@@ -18,6 +18,11 @@ a {
   outline: none;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
@@ -67,16 +72,88 @@ a {
   text-align: center;
 }
 
+.col-1 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
 .col-3 {
+  -webkit-box-flex: 0;
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
 
 .col-4 {
+  -webkit-box-flex: 0;
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
+}
+
+.col-5 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 h1 {
@@ -508,12 +585,12 @@ footer {
 
 .catalog-product {
   text-align: center;
+  margin-bottom: 30px;
 
   > a {
     display: block;
 
     img {
-      border: 1px solid #ced7e0;
       max-height: 100%;
       width: auto !important;
       margin: 0 auto;
@@ -526,6 +603,15 @@ footer {
 
   &__image {
     height: 315px;
+    width: 300px;
+    margin: 0 auto;
+
+    border: 1px solid #ced7e0;
+    &:hover {
+      & + a span {
+        color: @blue-color;
+      }
+    }
   }
 
   &__name {
@@ -534,6 +620,9 @@ footer {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
+    &:hover {
+      color: @blue-color;
+    }
   }
 
   &__avaliable {
@@ -547,7 +636,7 @@ footer {
   &__price {
     font-size: 30px;
     color: @blue-color;
-    margin-top: 13px;
+    margin-top: 5px;
   }
 }
 
@@ -695,6 +784,11 @@ footer {
     img {
       max-height: 100%;
     }
+    &:hover {
+      & + a span {
+        color: @blue-color;
+      }
+    }
   }
 
   &__name {
@@ -703,6 +797,9 @@ footer {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
+    &:hover {
+      color: @blue-color;
+    }
   }
 
   &__avaliable {
@@ -711,5 +808,27 @@ footer {
     font-weight: 300;
     margin-top: 8px;
     text-transform: uppercase;
+  }
+}
+
+.left-side__menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  a {
+    text-transform: uppercase;
+    color: @gray-color;
+    display: inline-block;
+    font-size: 12px;
+    margin: 6px 0;
+
+    &:hover {
+      color: @blue-color;
+    }
+  }
+  .current {
+    a {
+      color: @blue-color;
+      font-weight: 600;
+    }
   }
 }
