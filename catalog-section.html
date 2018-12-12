@@ -215,7 +215,37 @@
 
         <div class="content col-9">
 
-          <div class="products flex flex-wrap">
+          <div class="products-filter">
+            <div class="filter-button">
+              <span class="filter-show">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="8px" height="8px">
+                <path fill-rule="evenodd"  fill="rgb(106, 133, 157)"
+                 d="M4.000,7.000 L4.000,6.000 L7.000,6.000 L7.000,7.000 L4.000,7.000 ZM2.000,3.000 L7.000,3.000 L7.000,4.000 L2.000,4.000 L2.000,3.000 ZM0.002,0.000 L7.000,0.000 L7.000,1.000 L0.002,1.000 L0.002,0.000 Z"/>
+                </svg>
+                Показать фильтр
+              </span>
+              <span class="filter-hide">
+                <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="9px" height="9px">
+                <path fill-rule="evenodd"  fill="rgb(106, 133, 157)"
+                 d="M8.743,8.036 L8.035,8.742 L4.499,5.207 L0.963,8.742 L0.257,8.036 L3.792,4.500 L0.257,0.965 L0.963,0.257 L4.499,3.793 L8.035,0.257 L8.743,0.965 L5.207,4.500 L8.743,8.036 Z"/>
+                </svg>
+                Скрыть фильтр
+              </span>
+            </div>
+
+            <div class="filter-content">
+              фильтр здесь
+            </div>
+
+          </div>
+
+          <div class="products flex flex-wrap flex-justify-between">
             <div class="catalog-product col-4">
               <a href="#" class="catalog-product__image">
                 <img src="/img/product.png" alt="Фритюрница LILOMA FLM 8">
@@ -284,74 +314,25 @@
               </span>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="catalog-sections flex flex-wrap flex-justify-center">
-        <div class="catalog-section col-3">
-          <a href="#" class="catalog-section__image">
-            <img src="/img/catalog/section2.png" alt="Аппараты для горячего шоколада">
-          </a>
-          <a href="#">
-            <span class="catalog-section__name">
-              Аппараты для горячего шоколада
-            </span>
-          </a>
-          <span class="catalog-section__avaliable">
-            В наличии (35)
-          </span>
-        </div>
-        <div class="catalog-section col-3">
-          <a href="#" class="catalog-section__image">
-            <img src="/img/product.png" alt="Аппараты для горячего шоколада">
-          </a>
-          <a href="#">
-            <span class="catalog-section__name">
-              Посуда
-            </span>
-          </a>
-          <span class="catalog-section__avaliable">
-            В наличии (35)
-          </span>
-        </div>
-        <div class="catalog-section col-3">
-          <a href="#" class="catalog-section__image">
-            <img src="/img/catalog/section1.png" alt="Аппараты для горячего шоколада">
-          </a>
-          <a href="#">
-            <span class="catalog-section__name">
-              Аппараты для горячего шоколада
-            </span>
-          </a>
-          <span class="catalog-section__avaliable">
-            В наличии (35)
-          </span>
-        </div>
-        <div class="catalog-section col-3">
-          <a href="#" class="catalog-section__image">
-            <img src="/img/product.png" alt="Аппараты для горячего шоколада">
-          </a>
-          <a href="#">
-            <span class="catalog-section__name">
-              Аппараты для горячего шоколада
-            </span>
-          </a>
-          <span class="catalog-section__avaliable">
-            В наличии (35)
-          </span>
-        </div>
-        <div class="catalog-section col-3">
-          <a href="#" class="catalog-section__image">
-            <img src="/img/product.png" alt="Аппараты для горячего шоколада">
-          </a>
-          <a href="#">
-            <span class="catalog-section__name">
-              Аппараты для горячего шоколада
-            </span>
-          </a>
-          <span class="catalog-section__avaliable">
-            В наличии (35)
-          </span>
+          <div class="pagination_nav text-center">
+            <div class="load-more">
+              <a href="javascript:void(0)">
+                Показать еще 30
+              </a>
+            </div>
+
+            <div class="wrap_pagination">
+              <ul class="pagination">
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#"><span>...</span></li>
+                <li><a href="#">11</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 

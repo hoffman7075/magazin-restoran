@@ -21,4 +21,10 @@ $(document).ready(function() {
       dots: true
     });
   }
+
+  if ($(".products-filter").length > 0) {
+    $(".filter-button").on("click", "span", function() {
+      $(".products-filter").toggleClass("active");
+    });
+  }
 });

@@ -239,9 +239,12 @@ h2 {
   width: auto;
 }
 
-.inner__top {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.inner {
+  margin-bottom: 30px;
+  &__top {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .breadcrumbs {
@@ -829,6 +832,90 @@ footer {
     a {
       color: @blue-color;
       font-weight: 600;
+    }
+  }
+}
+
+.pagination_nav {
+  .load-more a {
+    font-size: 12px;
+    color: @blue-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid @blue-color;
+    padding-bottom: 3px;
+
+    &:hover {
+      color: @gray-color;
+      border-bottom: 2px solid @gray-color;
+    }
+  }
+
+  .wrap_pagination {
+    margin-top: 30px;
+  }
+
+  .pagination > li {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    line-height: 55px;
+
+    a {
+      font-size: 14px;
+      color: @blue-color;
+      padding: 20px;
+    }
+
+    &.active {
+      background: @blue-color;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    &:hover {
+      background: @blue-color;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.content {
+  position: relative;
+}
+
+.products-filter {
+  position: absolute;
+
+  .filter-button {
+    span {
+      cursor: pointer;
+      color: @blue-color;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:hover{
+        color: @gray-color;
+      }
+    }
+  }
+
+  .filter-hide {
+    display: none;
+  }
+
+  &.active {
+
+    .filter-show {
+      display: none;
+    }
+
+    .filter-hide {
+      display: initial;
     }
   }
 }

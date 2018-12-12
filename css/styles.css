@@ -214,6 +214,9 @@ h2 {
 .owl-carousel .owl-item img {
   width: auto;
 }
+.inner {
+  margin-bottom: 30px;
+}
 .inner__top {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -673,4 +676,67 @@ footer a:hover {
 .left-side__menu .current a {
   color: #5c7b97;
   font-weight: 600;
+}
+.pagination_nav .load-more a {
+  font-size: 12px;
+  color: #5c7b97;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid #5c7b97;
+  padding-bottom: 3px;
+}
+.pagination_nav .load-more a:hover {
+  color: #58585a;
+  border-bottom: 2px solid #58585a;
+}
+.pagination_nav .wrap_pagination {
+  margin-top: 30px;
+}
+.pagination_nav .pagination > li {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  line-height: 55px;
+}
+.pagination_nav .pagination > li a {
+  font-size: 14px;
+  color: #5c7b97;
+  padding: 20px;
+}
+.pagination_nav .pagination > li.active {
+  background: #5c7b97;
+  color: #fff;
+  font-weight: 600;
+}
+.pagination_nav .pagination > li:hover {
+  background: #5c7b97;
+}
+.pagination_nav .pagination > li:hover a {
+  color: #fff;
+}
+.content {
+  position: relative;
+}
+.products-filter {
+  position: absolute;
+}
+.products-filter .filter-button span {
+  cursor: pointer;
+  color: #5c7b97;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.products-filter .filter-button span:hover {
+  color: #58585a;
+}
+.products-filter .filter-hide {
+  display: none;
+}
+.products-filter.active .filter-show {
+  display: none;
+}
+.products-filter.active .filter-hide {
+  display: initial;
 }
