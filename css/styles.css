@@ -14,10 +14,20 @@ a {
 .container {
   position: relative;
   margin: 0 auto;
-  width: 1340px;
+  width: 1370px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.container.narrow {
-  width: 1090px;
+.container-wide {
+  position: relative;
+  width: 100%;
+}
+.container-narrow {
+  position: relative;
+  margin: 0 auto;
+  width: 1120px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .flex {
   display: -ms-flexbox;
@@ -51,6 +61,14 @@ a {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #58585a;
+  margin-bottom: 60px;
 }
 .tabs__caption {
   list-style: none;
@@ -101,6 +119,9 @@ a {
   width: 13px;
   height: 13px;
   background-color: #5d7b98;
+}
+.owl-carousel .owl-item img {
+  width: auto;
 }
 .btn {
   color: #5c7b97;
@@ -352,6 +373,9 @@ header .header-cart__total {
   right: 0;
   transform: translateY(-25%);
 }
+.instagram {
+  margin-bottom: 100px;
+}
 .instagram__row {
   margin: 15px 0;
 }
@@ -405,4 +429,17 @@ header .header-cart__total {
 .instagram__photo.text-subscribe .text-subscribe__account {
   color: #5c7b97;
   font-weight: normal;
+}
+.clients {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.clients-slider a img.hover {
+  display: none;
+}
+.clients-slider a:hover img.preview {
+  display: none;
+}
+.clients-slider a:hover img.hover {
+  display: block;
 }

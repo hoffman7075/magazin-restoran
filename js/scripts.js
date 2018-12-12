@@ -9,8 +9,14 @@ $(document).ready(function() {
 
 
   if ($(".owl-carousel").length > 0) {
-    $(".owl-carousel").owlCarousel({
+    $(".products-slider").owlCarousel({
       items: 4,
+      autoplay: true,
+      dots: true
+    });
+
+    $(".clients-slider").owlCarousel({
+      items: 5,
       autoplay: true,
       dots: true
     });
