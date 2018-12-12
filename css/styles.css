@@ -260,6 +260,9 @@ header .header-cart__total {
   font-weight: 600;
   color: #58585a;
 }
+header .header-cart:hover .header-cart__total {
+  color: #5c7b97;
+}
 .products-header {
   background: #f7f0e6;
   padding: 15px 0;
@@ -283,13 +286,15 @@ footer {
   padding: 85px 0 25px;
   color: #fff;
 }
+footer a {
+  color: #fff;
+}
 footer .footer-col {
   width: 20%;
 }
 footer .footer-col__title {
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
   text-transform: uppercase;
   height: 16px;
 }
@@ -303,16 +308,13 @@ footer .footer__menu li a {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 12px;
-  color: #fff;
-}
-footer .footer__menu li a:hover {
-  color: #58585a;
+  display: inline-block;
+  margin: 5px 0;
 }
 footer .footer__contacts {
   margin-top: 15px;
 }
 footer .footer__contacts a {
-  color: #fff;
   display: inline-block;
   margin-bottom: 12px;
 }
@@ -332,6 +334,9 @@ footer .footer__contacts .footer__address {
 footer .footer__copyright {
   font-size: 12px;
   font-weight: 300;
+}
+footer a:hover {
+  color: #58585a;
 }
 .main-banner {
   padding: 10px 0 35px;

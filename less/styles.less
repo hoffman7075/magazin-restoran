@@ -295,14 +295,23 @@ header {
       height: 33px;
       text-align: center;
       line-height: 33px;
+
     }
 
     &__total {
       font-size: 14px;
       font-weight: 600;
       color: @gray-color;
+
+    }
+
+    &:hover {
+      .header-cart__total {
+        color: @blue-color;
+      }
     }
   }
+
 }
 
 .products-header {
@@ -336,6 +345,10 @@ footer {
   padding: 85px 0 25px;
   color: #fff;
 
+  a {
+    color: #fff;
+  }
+
   .footer-col {
     width: 20%;
   }
@@ -343,7 +356,6 @@ footer {
   .footer-col__title {
     font-size: 14px;
     font-weight: 600;
-    color: #fff;
     text-transform: uppercase;
     height: 16px;
   }
@@ -359,11 +371,8 @@ footer {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 12px;
-        color: #fff;
-
-        &:hover {
-          color: @gray-color;
-        }
+        display: inline-block;
+        margin: 5px 0;
       }
     }
   }
@@ -372,7 +381,6 @@ footer {
     margin-top: 15px;
 
     a {
-      color: #fff;
       display: inline-block;
       margin-bottom: 12px;
     }
@@ -397,6 +405,13 @@ footer {
   .footer__copyright {
     font-size: 12px;
     font-weight: 300;
+  }
+
+
+  a {
+    &:hover {
+      color: @gray-color;
+    }
   }
 }
 
