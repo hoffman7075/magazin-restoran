@@ -23,8 +23,27 @@ $(document).ready(function() {
   }
 
   if ($(".products-filter").length > 0) {
+    var priceMin = $(".products-filter .price-min");
+    var priceMax = $(".products-filter .price-max");
+    var priceSlider = $(".products-filter .price-slider");
+
     $(".filter-button").on("click", "span", function() {
       $(".products-filter").toggleClass("active");
     });
+
+    priceSlider.slider({
+      range: true,
+      min: 2245,
+      max: 69854,
+      values: [ 11245, 39854 ],
+      slide: function( event, ui ) {
+        priceMin.text(ui.values[0]);
+        priceMax.text(ui.values[1]);
+      }
+    });
+
+    priceMin.text(priceSlider.slider("values", 0));
+    priceMax.text(priceSlider.slider("values", 1));
+
   }
 });

@@ -12,6 +12,7 @@
   <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 
   <title>Каталог</title>
@@ -215,7 +216,7 @@
 
         <div class="content col-9">
 
-          <div class="products-filter">
+          <div class="products-filter active">
             <div class="filter-button">
               <span class="filter-show">
                 <svg
@@ -239,8 +240,292 @@
               </span>
             </div>
 
-            <div class="filter-content">
-              фильтр здесь
+            <div class="filter-content flex">
+              <div class="col-4">
+                <div class="col-12">
+                  <div class="filter-prop__title">
+                    Розничная цена
+                  </div>
+                  <div class="filter-prop price">
+                    <div class="price-value">
+                      <span class="price-min">
+                        1
+                      </span>
+                      Р
+                    </div>
+                    <div class="price-slider">
+
+                    </div>
+                    <div class="price-value">
+                      <span class="price-max">
+                        100
+                      </span>
+                      Р
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="filter-prop__title">
+                    Бренды
+                  </div>
+                  <div class="filter-prop list brands">
+                    <ul>
+                      <li>
+                        <label for="prop_1">
+                          <input id="prop_1" type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="">
+                          <input type="checkbox" class="checkbox">
+                          <span class="checkbox__control"></span>
+                          <span class="filter-prop__name">
+                            Чешуйчатый
+                          </span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="filter-prop__title">
+                  Тип льда
+                </div>
+                <div class="filter-prop list">
+                  <ul>
+                    <li>
+                      <label for="prop_1">
+                        <input id="prop_1" type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый комбинированный
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="filter-prop__title">
+                  Подключение
+                </div>
+                <div class="filter-prop list">
+                  <ul>
+                    <li>
+                      <label for="prop_1">
+                        <input id="prop_1" type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый комбинированный
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="filter-prop__title">
+                  Охлаждение
+                </div>
+                <div class="filter-prop list">
+                  <ul>
+                    <li>
+                      <label for="prop_1">
+                        <input id="prop_1" type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый комбинированный
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Чешуйчатый
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="filter-prop__title">
+                  Сортировать
+                </div>
+                <div class="filter-prop list">
+                  <ul>
+                    <li>
+                      <label for="sort_1">
+                        <input id="sort_1" type="radio" name="sort" class="checkbox" checked>
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          По наличию
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="sort_2">
+                        <input id="sort_2" type="radio" name="sort" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Сначала дешевые
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="sort_3">
+                        <input id="sort_3" type="radio" name="sort" class="checkbox">
+                        <span class="checkbox__control"></span>
+                        <span class="filter-prop__name">
+                          Сначала дорогие
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -465,8 +750,9 @@
   </footer>
 
   <!-- Optional JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
   <script src="/js/scripts.js"></script>
 </body>
 

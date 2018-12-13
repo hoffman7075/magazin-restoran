@@ -720,6 +720,11 @@ footer a:hover {
 }
 .products-filter {
   position: absolute;
+  top: -60px;
+  width: 100%;
+}
+.products-filter .filter-button {
+  text-align: right;
 }
 .products-filter .filter-button span {
   cursor: pointer;
@@ -734,9 +739,108 @@ footer a:hover {
 .products-filter .filter-hide {
   display: none;
 }
+.products-filter .filter-content {
+  display: none;
+  background: #f7f0e6;
+  padding: 15px 30px;
+  margin-top: 20px;
+}
+.products-filter .filter-content .filter-prop__title {
+  font-size: 12px;
+  color: #58585a;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.products-filter .filter-content .filter-prop.list ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.products-filter .filter-content .filter-prop.list label {
+  cursor: pointer;
+}
+.products-filter .filter-content .filter-prop.list .filter-prop__name {
+  font-size: 12px;
+  color: #5c7b97;
+  text-transform: uppercase;
+}
+.products-filter .filter-content .filter-prop.list .filter-prop__name:hover {
+  color: #58585a;
+}
+.products-filter .filter-content .filter-prop.brands ul {
+  column-count: 2;
+}
+.products-filter .filter-content .filter-prop.price {
+  margin-bottom: 15px;
+}
+.products-filter .filter-content .filter-prop.price .price-value {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15%;
+  font-size: 12px;
+  color: #5c7b97;
+}
+.products-filter .filter-content .filter-prop.price .price-slider {
+  height: 4px;
+  border: none;
+  background: #ced7e0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 59%;
+}
+.products-filter .filter-content .filter-prop.price .price-slider .ui-slider-range {
+  background: #5c7b97;
+}
+.products-filter .filter-content .filter-prop.price .price-slider .ui-state-default,
+.products-filter .filter-content .filter-prop.price .price-slider .ui-widget-content .ui-state-default,
+.products-filter .filter-content .filter-prop.price .price-slider .ui-widget-header .ui-state-default,
+.products-filter .filter-content .filter-prop.price .price-slider .ui-button,
+.products-filter .filter-content .filter-prop.price .price-slider html .ui-button.ui-state-disabled:hover,
+.products-filter .filter-content .filter-prop.price .price-slider html .ui-button.ui-state-disabled:active {
+  border-radius: 50%;
+  border: none;
+  background: #5c7b97;
+}
+.products-filter .filter-content .filter-prop.price .price-slider .ui-slider-handle {
+  width: 1em;
+  height: 1em;
+  top: -0.3em;
+}
 .products-filter.active .filter-show {
   display: none;
 }
 .products-filter.active .filter-hide {
   display: initial;
+}
+.products-filter.active .filter-content {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.checkbox__control {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #5c7b97;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox:checked + .checkbox__control {
+  border-color: #01a982;
+}
+.checkbox:checked + .checkbox__control:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #5c7b97;
 }
