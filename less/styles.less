@@ -277,13 +277,27 @@ h2 {
   font-size: 12px;
   font-weight: 600;
   padding: 18px 95px;
-  width: 298px;
-  height: 53px;
-  .flex-block();
+  // width: 298px;
+  // height: 53px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  transition: 0.2s all;
 
   &:hover {
     color: @gray-color;
     border: 1px solid @gray-color;
+  }
+
+  &.to-cart {
+    background-color: @blue-color;
+    color: #fff;
+    width: 100%;
+
+    &:hover {
+      border: 1px solid @blue-color;
+      box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
@@ -962,6 +976,7 @@ footer {
 
       &.price {
         margin-bottom: 15px;
+
         .price-value {
           display: inline-block;
           vertical-align: middle;
@@ -982,7 +997,12 @@ footer {
             background: @blue-color;
           }
 
-          .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+          .ui-button,
+          .ui-state-default,
+          .ui-widget-content .ui-state-default,
+          .ui-widget-header .ui-state-default,
+          html .ui-button.ui-state-disabled:active,
+          html .ui-button.ui-state-disabled:hover {
             border-radius: 50%;
             border: none;
             background: @blue-color;
@@ -1044,4 +1064,143 @@ footer {
       }
     }
   }
+}
+
+.quantity-block {
+  background-color: rgb(243, 246, 248);
+  border-radius: 50px;
+  width: 130px;
+  height: 55px;
+
+  input {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    color: @blue-color;
+    font-size: 14px;
+  }
+
+  &__action {
+    cursor: pointer;
+    font-size: 18px;
+    color: @blue-color;
+    font-weight: 600;
+    padding: 0 16px;
+  }
+}
+
+.product {
+  a {
+    font-size: 12px;
+    color: @blue-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px dashed @blue-color;
+
+    &:hover {
+      color: @gray-color;
+      border-bottom: 1px dashed @gray-color;
+    }
+
+    &.product__get-discount {
+      font-size: 12px;
+      color: rgb(0, 166, 81);
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      border-bottom: 1px dashed rgb(0, 166, 81);
+    }
+
+    &.product__delivery {
+      margin-right: 50px;
+    }
+
+    &.product__help {
+      margin-left: 10px;
+    }
+  }
+
+  &__info {
+    > div {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__article {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: @gray-color;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  &__price {
+    font-size: 30px;
+    color: @blue-color;
+    font-weight: 600;
+  }
+
+  &__properties {
+
+    .properties__list {
+      span {
+        font-size: 14px;
+        color: @gray-color;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      >div {
+        margin: 5px 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-botom: 0;
+        }
+      }
+
+    }
+    .properties__title {
+      margin-bottom: 20px;
+      cursor: pointer;
+      svg {
+        .rotate(180deg);
+      }
+      span {
+        font-size: 14px;
+        color: @gray-color;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &.active {
+        svg {
+          .rotate(0);
+        }
+      }
+    }
+  }
+
+  &__best {
+    span {
+      margin-left: 10px;
+      font-size: 12px;
+      color: @gray-color;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.line {
+  background-color: rgb(206, 215, 224);
+  width: 100%;
+  height: 1px;
 }

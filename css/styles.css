@@ -244,15 +244,23 @@ h2 {
   font-size: 12px;
   font-weight: 600;
   padding: 18px 95px;
-  width: 298px;
-  height: 53px;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  transition: 0.2s all;
 }
 .btn:hover {
   color: #58585a;
   border: 1px solid #58585a;
+}
+.btn.to-cart {
+  background-color: #5c7b97;
+  color: #fff;
+  width: 100%;
+}
+.btn.to-cart:hover {
+  border: 1px solid #5c7b97;
+  box-shadow: 0 18px 32px 0 rgba(0, 0, 0, 0.2);
 }
 header {
   padding: 13px 0 10px;
@@ -791,12 +799,12 @@ footer a:hover {
 .products-filter .filter-content .filter-prop.price .price-slider .ui-slider-range {
   background: #5c7b97;
 }
+.products-filter .filter-content .filter-prop.price .price-slider .ui-button,
 .products-filter .filter-content .filter-prop.price .price-slider .ui-state-default,
 .products-filter .filter-content .filter-prop.price .price-slider .ui-widget-content .ui-state-default,
 .products-filter .filter-content .filter-prop.price .price-slider .ui-widget-header .ui-state-default,
-.products-filter .filter-content .filter-prop.price .price-slider .ui-button,
-.products-filter .filter-content .filter-prop.price .price-slider html .ui-button.ui-state-disabled:hover,
-.products-filter .filter-content .filter-prop.price .price-slider html .ui-button.ui-state-disabled:active {
+.products-filter .filter-content .filter-prop.price .price-slider html .ui-button.ui-state-disabled:active,
+.products-filter .filter-content .filter-prop.price .price-slider html .ui-button.ui-state-disabled:hover {
   border-radius: 50%;
   border: none;
   background: #5c7b97;
@@ -843,4 +851,115 @@ footer a:hover {
   width: 10px;
   height: 10px;
   background-color: #5c7b97;
+}
+.quantity-block {
+  background-color: #f3f6f8;
+  border-radius: 50px;
+  width: 130px;
+  height: 55px;
+}
+.quantity-block input {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  color: #5c7b97;
+  font-size: 14px;
+}
+.quantity-block__action {
+  cursor: pointer;
+  font-size: 18px;
+  color: #5c7b97;
+  font-weight: 600;
+  padding: 0 16px;
+}
+.product a {
+  font-size: 12px;
+  color: #5c7b97;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #5c7b97;
+}
+.product a:hover {
+  color: #58585a;
+  border-bottom: 1px dashed #58585a;
+}
+.product a.product__get-discount {
+  font-size: 12px;
+  color: #00a651;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px dashed #00a651;
+}
+.product a.product__delivery {
+  margin-right: 50px;
+}
+.product a.product__help {
+  margin-left: 10px;
+}
+.product__info > div {
+  margin-bottom: 20px;
+}
+.product__article {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: #58585a;
+  text-transform: uppercase;
+}
+.product__title h1 {
+  font-size: 30px;
+}
+.product__price {
+  font-size: 30px;
+  color: #5c7b97;
+  font-weight: 600;
+}
+.product__properties .properties__list span {
+  font-size: 14px;
+  color: #58585a;
+  text-transform: uppercase;
+  text-align: left;
+}
+.product__properties .properties__list > div {
+  margin: 5px 0;
+}
+.product__properties .properties__list > div:first-child {
+  margin-top: 0;
+}
+.product__properties .properties__list > div:last-child {
+  margin-botom: 0;
+}
+.product__properties .properties__title {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.product__properties .properties__title svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.product__properties .properties__title span {
+  font-size: 14px;
+  color: #58585a;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.product__properties .properties__title.active svg {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+.product__best span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #58585a;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.line {
+  background-color: #ced7e0;
+  width: 100%;
+  height: 1px;
 }

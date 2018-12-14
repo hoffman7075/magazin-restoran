@@ -46,4 +46,12 @@ $(document).ready(function() {
     priceMax.text(priceSlider.slider("values", 1));
 
   }
+
+  if ($(".accordion").length > 0) {
+    $(".accordion").on("click", function() {
+      $(this).toggleClass("active");
+      $(this).next().slideToggle(200);
+    })
+  }
+
 });
