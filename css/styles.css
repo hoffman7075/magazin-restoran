@@ -14,6 +14,7 @@ a {
 }
 p {
   margin-top: 0;
+  line-height: 1.2;
 }
 p:last-child {
   margin-bottom: 0;
@@ -269,6 +270,8 @@ h2 {
   vertical-align: middle;
   line-height: 1;
   transition: 0.2s all;
+  cursor: pointer;
+  background-color: transparent;
 }
 .btn:hover {
   color: #58585a;
@@ -1092,4 +1095,79 @@ footer a:hover {
 }
 .similar h2 {
   color: #5c7b97;
+}
+.ready-projects h2 {
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 24px;
+}
+.ready-projects .list-projects__project {
+  background-color: #ffffff;
+  width: 250px;
+  text-align: center;
+  transition: 0.2s box-shadow;
+  margin-left: 50px;
+}
+.ready-projects .list-projects__project span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #58585a;
+  transition: 0.2s color;
+  margin-bottom: 12px;
+}
+.ready-projects .list-projects__project .project-img {
+  height: 180px;
+  background-repeat: no-repeat;
+}
+.ready-projects .list-projects__project .project-img img {
+  opacity: 0;
+}
+.ready-projects .list-projects__project .project-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.ready-projects .list-projects__project .project-price {
+  font-size: 18px;
+  color: #5c7b97;
+  text-transform: none;
+}
+.ready-projects .list-projects__project .project-info {
+  padding: 30px 25px 15px;
+  border: 1px solid #ced7e0;
+  border-top: none;
+}
+.ready-projects .list-projects__project .line {
+  margin-bottom: 12px;
+}
+.ready-projects .list-projects__project:hover {
+  box-shadow: 0px 18px 32px 0px rgba(93, 123, 152, 0.2);
+}
+.ready-projects .list-projects__project:hover .project-title {
+  color: #5c7b97;
+}
+.feedback-project h2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.feedback-project h3 {
+  font-size: 18px;
+  text-align: left;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control {
+  border-width: 1px;
+  border-color: #ced7e0;
+  border-style: solid;
+  border-radius: 20px;
+  width: 408px;
+  height: 38px;
+  font-size: 16px;
+  line-height: 1.2;
+  padding-left: 20px;
+  padding-right: 20px;
 }

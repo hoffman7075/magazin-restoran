@@ -59,6 +59,7 @@ $(document).ready(function() {
 
   // bxslider product
   if ($(".bxslider").length > 0) {
+    // https://gist.github.com/tarikcayir/c9851b6253e4688bd4544e1677ee4fc5
 
     // Cache the thumb selector for speed
     var thumb = $('#gallery-thumbs').find('.thumb');
@@ -106,13 +107,11 @@ $(document).ready(function() {
 
     // When you click on a thumb
     $('#gallery-thumbs').find('.thumb').click(function() {
-
       // Remove the active class from all thumbs
       $('#gallery-thumbs').find('.thumb').removeClass('pager-active');
 
       // Add the active class to the clicked thumb
       $(this).addClass('pager-active');
-
     });
 
     // Thumbnail slider
