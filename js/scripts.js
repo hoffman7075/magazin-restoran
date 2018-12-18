@@ -132,4 +132,10 @@ $(document).ready(function() {
 
   }
 
+  var ps = new PerfectScrollbar('.list-projects', {
+      suppressScrollY: true,
+      useBothWheelAxes: true,
+      wheelSpeed: 2
+    }
+  );
 });
