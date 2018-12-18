@@ -1139,19 +1139,23 @@ footer a:hover {
 .ready-projects .list-projects {
   position: relative;
   padding-bottom: 50px;
+  margin-bottom: 40px;
 }
 .ready-projects .list-projects .ps__rail-x {
   opacity: 1;
   background: #ced7e0;
   height: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 .ready-projects .list-projects .ps__thumb-x {
   background: #5c7b97;
-  top: -3px;
+  top: -2px;
+  height: 5px;
 }
 .ready-projects .list-projects .ps__rail-x:hover > .ps__thumb-x {
-  top: -5px;
+  top: -2px;
+  height: 5px;
+  background: #58585a;
 }
 .ready-projects .list-projects__project {
   background-color: #ffffff;

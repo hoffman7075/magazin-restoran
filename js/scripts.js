@@ -129,13 +129,15 @@ $(document).ready(function() {
       nextText: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="12px" transform="rotate(180)"><path fill-rule="evenodd" stroke="rgb(104, 104, 105)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M1.011,7.661 L7.999,1.011 L14.989,7.661 "></path></svg>',
       prevText: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="12px"><path fill-rule="evenodd" stroke="rgb(104, 104, 105)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M1.011,7.661 L7.999,1.011 L14.989,7.661 "></path></svg>',
     });
-
   }
 
-  var ps = new PerfectScrollbar('.list-projects', {
-      suppressScrollY: true,
-      useBothWheelAxes: true,
-      wheelSpeed: 2
-    }
-  );
+  // custom scroll
+  if ($(".list-projects").length > 0) {
+    var ps = new PerfectScrollbar('.list-projects', {
+        suppressScrollY: true,
+        useBothWheelAxes: true,
+        wheelSpeed: 2
+      }
+    );
+  }
 });
