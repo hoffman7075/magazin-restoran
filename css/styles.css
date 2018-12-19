@@ -1264,23 +1264,8 @@ footer a:hover {
   margin-bottom: 30px;
   display: block;
 }
-.ready-project .props__table tr {
-  background: #f3f6f8;
-}
-.ready-project .props__table tr:nth-child(2n) {
-  background: #fff;
-}
-.ready-project .props__table td {
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 8px 0;
-}
 .ready-project .props__table td:first-child {
-  padding-left: 40px;
   width: 60%;
-}
-.ready-project .props__table td:last-child {
-  text-transform: none;
 }
 .ready-project__total {
   background: #f3f6f8;
@@ -1296,6 +1281,38 @@ footer a:hover {
   color: #5c7b97;
   text-transform: none;
   margin: 0 100px 0 50px;
+}
+.props__table tr {
+  background: #f3f6f8;
+}
+.props__table tr:nth-child(2n) {
+  background: #fff;
+}
+.props__table thead tr {
+  background: #fff;
+}
+.props__table th {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 8px 0;
+  text-align: left;
+}
+.props__table th:first-child {
+  padding-left: 40px;
+}
+.props__table th span {
+  font-weight: normal;
+}
+.props__table td {
+  font-size: 14px;
+  padding: 8px 0;
+}
+.props__table td:first-child {
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+.props__table td:last-child {
+  text-transform: none;
 }
 .cart-block {
   margin-bottom: 40px;
@@ -1386,11 +1403,8 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: center;
 }
-.news-list__news .news__date {
-  display: block;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 12px;
+.news-list__news .news__image img {
+  opacity: 0;
 }
 .news-list__news .news__title {
   font-size: 24px;
@@ -1412,4 +1426,14 @@ footer a:hover {
 }
 .news-list__news .news__link:hover {
   color: #58585a;
+}
+.news__date {
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+}
+.news-detail__text {
+  margin-bottom: 50px;
 }

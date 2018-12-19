@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/css/jquery-ui.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 
-  <title>Новости</title>
+  <title>Новость детально</title>
 </head>
 
 <body>
@@ -166,11 +166,25 @@
 
   <section class="inner">
     <div class="container-wide">
-      <div class="header-image" style="background-image: url('/img/news/news-header.png')">
+      <div class="header-image" style="background-image: url('/img/news/news-header-detail.png')">
         <div class="header-image__title-bg"></div>
         <div class="container">
+          <div class="inner__top flex flex-va-center">
+            <a href="/news.html" class="prev-page flex flex-va-center">
+              <svg
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               width="12px" height="16px">
+              <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+               d="M7.662,14.989 L1.011,8.000 L7.662,1.012 "/>
+              </svg>
+              Назад к новостям
+            </a>
+          </div>
+
           <h1 class="col-5">
-            Новости
+            <span class="news__date">05 ноября 2016</span>
+            Двухъярусные<br>лари Viatto
           </h1>
         </div>
 
@@ -179,107 +193,45 @@
 
     <div class="container">
 
-      <div class="news-list">
+      <div class="news-detail">
         <div class="flex flex-wrap">
           <div class="col-6">
-            <div class="news-list__news">
-              <a href="/news-element.html">
-                <div class="news__image" style="background-image: url('/img/news/news-header.png')">
-                  <img src="#" alt="">
-                </div>
-              </a>
-              <div class="news__info">
-                <span class="news__date">
-                  05 ноября 2016
-                </span>
-                <a href="/news-element.html" class="news__title">
-                  Новая серия посудомоечных машин Viatto
-                </a>
-                <p class="news__preview">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nostrum nulla unde explicabo! Eaque consequuntur aut mollitia beatae facilis, nobis!
-                </p>
-                <a href="#" class="news__link">
-                  Подробнее...
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="7px">
-                    <path fill-rule="evenodd" fill="rgb(93, 123, 152)" d="M33.000,3.459 L33.035,3.500 L33.000,3.541 L33.000,4.000 L32.602,4.000 L30.001,7.000 L30.001,4.000 L0.000,4.000 L0.000,3.000 L30.001,3.000 L30.001,0.000 L32.602,3.000 L33.000,3.000 L33.000,3.459 Z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="news-list__news">
-              <a href="#">
-                <div class="news__image" style="background-image: url('/img/news/news-header.png')">
-                  <img src="#" alt="">
-                </div>
-              </a>
-              <div class="news__info">
-                <span class="news__date">
-                  05 ноября 2016
-                </span>
-                <a href="#" class="news__title">
-                  Новая серия посудомоечных машин Viatto
-                </a>
-                <p class="news__preview">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nostrum nulla unde explicabo! Eaque consequuntur aut mollitia beatae facilis, nobis!
-                </p>
-                <a href="#" class="news__link">
-                  Подробнее...
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="7px">
-                    <path fill-rule="evenodd" fill="rgb(93, 123, 152)" d="M33.000,3.459 L33.035,3.500 L33.000,3.541 L33.000,4.000 L32.602,4.000 L30.001,7.000 L30.001,4.000 L0.000,4.000 L0.000,3.000 L30.001,3.000 L30.001,0.000 L32.602,3.000 L33.000,3.000 L33.000,3.459 Z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="news-list__news">
-              <a href="#">
-                <div class="news__image" style="background-image: url('/img/news/news-header.png')">
-                  <img src="#" alt="">
-                </div>
-              </a>
-              <div class="news__info">
-                <span class="news__date">
-                  05 ноября 2016
-                </span>
-                <a href="#" class="news__title">
-                  Новая серия посудомоечных машин Viatto
-                </a>
-                <p class="news__preview">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nostrum nulla unde explicabo! Eaque consequuntur aut mollitia beatae facilis, nobis!
-                </p>
-                <a href="#" class="news__link">
-                  Подробнее...
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="7px">
-                    <path fill-rule="evenodd" fill="rgb(93, 123, 152)" d="M33.000,3.459 L33.035,3.500 L33.000,3.541 L33.000,4.000 L32.602,4.000 L30.001,7.000 L30.001,4.000 L0.000,4.000 L0.000,3.000 L30.001,3.000 L30.001,0.000 L32.602,3.000 L33.000,3.000 L33.000,3.459 Z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pagination_nav text-center">
-          <div class="load-more">
-            <a href="javascript:void(0)">
-              Показать еще 30
-            </a>
-          </div>
+            <div class="news-detail__text col-9">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit natus animi distinctio hic deserunt saepe, recusandae, laudantium voluptates architecto vel, praesentium quas odit totam. Omnis nihil numquam voluptates accusantium quibusdam.</p>
 
-          <div class="wrap_pagination">
-            <ul class="pagination">
-              <li class="active"><span>1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#"><span>...</span></a></li><a href="#">
-              </a>
-              <li><a href="#"></a><a href="#">11</a></li>
-            </ul>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita temporibus eos, hic accusantium dolorum distinctio nostrum ea enim ad odio.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, culpa.</p>
+            </div>
+            <div class="news-detail__table col-11">
+              <table class="props__table">
+              <thead>
+                <tr>
+                  <th>Характеристики</th>
+                  <th>Модель <span> - TD400LD</span></th>
+                  <th>Модель <span> - TD400LD</span></th>
+                </tr>
+              </thead>
+              <tbody><tr>
+                <td>S общая:</td>
+                <td>450 м2</td>
+                <td>450 м2</td>
+              </tr>
+              <tr>
+                <td>Вспомогательные помещения:</td>
+                <td>50 м2</td>
+                <td>50 м2</td>
+              </tr>
+            </tbody></table>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="news-detail__img">
+              <img src="/img/news/news-detail.png" alt="">
+            </div>
           </div>
         </div>
-      </div> <!-- news-list -->
+      </div>
 
     </div> <!-- container -->
 
