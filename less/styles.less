@@ -80,6 +80,15 @@ table {
   text-transform: none;
 }
 
+.title-blue {
+  color: @blue-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
 .flex {
   .flex-block();
 }
@@ -1805,5 +1814,36 @@ footer {
 .news-detail {
   &__text {
     margin-bottom: 50px;
+  }
+}
+
+#yamap {
+  margin-bottom: 50px;
+}
+
+.contacts {
+  p {
+    font-size: 14px;
+  }
+
+  .contact {
+    &-tel {
+      font-weight: 600;
+      font-size: 18px;
+      color: @gray-color;
+
+      &:hover {
+        color: @blue-color;
+      }
+    }
+
+    &-mail {
+      color: @blue-color;
+      font-size: 12px;
+
+      &:hover {
+        color: @gray-color;
+      }
+    }
   }
 }
