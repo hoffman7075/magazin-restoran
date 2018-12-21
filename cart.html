@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="//necolas.github.io/normalize.css/latest/normalize.css">
+  <!-- Ubuntu Font -->
+  <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title>Корзина</title>
+</head>
+
+<body>
+  <header>
+    <div class="container flex flex-va-center flex-justify-between">
+      <nav class="header-nav">
+        <ul class="flex">
+          <li>
+            <a href="/catalog.html">Каталог</a>
+          </li>
+          <li class="has-submenu">
+            <a href="#">О компании</a>
+            <div class="submenu-wrapper">
+              <ul class="submenu">
+                <li>
+                  <a href="#">Наши клиенты</a>
+                </li>
+                <li>
+                  <a href="#">Гарантии</a>
+                </li>
+                <li>
+                  <a href="#">Портфолио</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Статьи</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">Установка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-logo">
+        <a href="/">
+          <img src="/img/header-logo.png" alt="Логотип">
+        </a>
+      </div>
+      <div class="header-search">
+        <a href="#">
+          <img src="/img/header-search.png" alt="Поиск">
+        </a>
+      </div>
+      <div class="header-contacts">
+        <a href="tel:+74957878785" class="header-contacts__tel">
+          +7 (495) 78-78-78-5
+        </a>
+        <br>
+        <a href="mailto:info@magazin-restoran.ru" class="header-contacts__mail">
+          info@magazin-restoran.ru
+        </a>
+      </div>
+      <div class="header-cart">
+        <a href="#" class="flex flex-va-center">
+          <img src="/img/header-cart.png" alt="Корзина">
+          <span class="header-cart__count">3</span>
+          <span class="header-cart__total">32 564 Р</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="products-header">
+    <div class="container flex flex-va-bottom">
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/barnoe.png" alt="Барное оборудование">
+        </a>
+        <a href="#">
+          Барное оборудование
+        </a>
+      </div>
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/vent.png" alt="Вентиляционное оборудование">
+        </a>
+        <a href="#">
+          Вентиляционное оборудование
+        </a>
+      </div>
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/ves.png" alt="Весовое оборудование">
+        </a>
+        <a href="#">
+          Весовое оборудование
+        </a>
+      </div>
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/emkost.png" alt="Гастроемкости и аксессуары">
+        </a>
+        <a href="#">
+          Гастроемкости и аксессуары
+        </a>
+      </div>
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/zapch.png" alt="Запасные части">
+        </a>
+        <a href="#">
+          Запасные части
+        </a>
+      </div>
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/kofe.png" alt="Кофемашины и аксессуары">
+        </a>
+        <a href="#">
+          Кофемашины и аксессуары
+        </a>
+      </div>
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/razdacha.png" alt="Линии раздачи питания">
+        </a>
+        <a href="#">
+          Линии раздачи питания
+        </a>
+      </div>
+      <div class="products-header__product">
+        <a href="#">
+          <img src="/img/products-header/vspomogat.png" alt="Вспомогательное оборудование">
+        </a>
+        <a href="#">
+          Вспомогательное оборудование
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="inner">
+    <div class="container">
+      <div class="inner__top flex flex-va-center">
+        <h1 class="col-3">
+          Корзина
+        </h1>
+
+        <div class="breadcrumbs">
+          <a href="#">
+            Главная
+          </a>
+          <span class="breadcrumbs__separator">/</span>
+          <span class="current">
+            Корзина
+          </span>
+        </div>
+      </div>
+
+      <div class="cart flex">
+        <div class="col-8">
+          <div class="col-11">
+            <div class="cart-block">
+              <span class="title-gray">
+                Ваш заказ
+              </span>
+              <table class="cart-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Товар</th>
+                    <th>Количество</th>
+                    <th>Цена</th>
+                    <th>Сумма</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="/img/catalog/section1.png" alt="">
+                    </td>
+                    <td>
+                      <span class="aricle">Артикул: 345987</span>
+                      <span class="name">Лодогенератор EQTA EB12A</span>
+                    </td>
+                    <td>
+                      <div class="quantity-block flex flex-va-center flex-justify-between">
+                        <span class="quantity-block__action minus">-</span>
+                        <input class="quantity-block__input" type="text" value="1">
+                        <span class="quantity-block__action plus">+</span>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="price">17 758 <i class="rub">a</i></span>
+                    </td>
+                    <td>
+                      <span class="price">17 758 <i class="rub">a</i></span>
+                    </td>
+                    <td>
+                      <a href="#" class="remove-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px">
+                          <path fill-rule="evenodd" stroke="rgb(237, 20, 91)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M12.656,11.243 L11.242,12.657 L6.999,8.414 L2.756,12.657 L1.344,11.243 L5.586,7.000 L1.344,2.757 L2.756,1.343 L6.999,5.586 L11.242,1.343 L12.656,2.757 L8.413,7.000 L12.656,11.243 Z" />
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="/img/catalog/section1.png" alt="">
+                    </td>
+                    <td>
+                      <span class="aricle">Артикул: 345987</span>
+                      <span class="name">Лодогенератор EQTA EB12A</span>
+                    </td>
+                    <td>
+                      <div class="quantity-block flex flex-va-center flex-justify-between">
+                        <span class="quantity-block__action minus">-</span>
+                        <input class="quantity-block__input" type="text" value="1">
+                        <span class="quantity-block__action plus">+</span>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="price">17 758 <i class="rub">a</i></span>
+                    </td>
+                    <td>
+                      <span class="price">17 758 <i class="rub">a</i></span>
+                    </td>
+                    <td>
+                      <a href="#" class="remove-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px">
+                          <path fill-rule="evenodd" stroke="rgb(237, 20, 91)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M12.656,11.243 L11.242,12.657 L6.999,8.414 L2.756,12.657 L1.344,11.243 L5.586,7.000 L1.344,2.757 L2.756,1.343 L6.999,5.586 L11.242,1.343 L12.656,2.757 L8.413,7.000 L12.656,11.243 Z" />
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cart-order">
+            <span class="title-gray">
+              Детали доставки
+            </span>
+            <div class="tabs order">
+              <ul class="tabs__caption flex flex-va-center flex-justify-center">
+                <li class="col-6 text-center">
+                  <span>
+                    Частное лицо
+                  </span>
+                </li>
+                <li class="active col-6 text-center">
+                  <span>
+                    Юридическое лицо
+                  </span>
+                </li>
+              </ul>
+              <div class="tabs__content">
+                <form action="#">
+
+                </form>
+              </div>
+              <div class="tabs__content active">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" placeholder="Название компании" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Телефон" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="E-mail" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="0">Город доставки</option>
+                      <option value="">Москва</option>
+                      <option value="">Владивосток</option>
+                    </select>
+                  </div>
+                  <div class="flex">
+                    <div class="col-6">
+                      <div class="col-11">
+                        <div class="form-group">
+                          <input type="text" placeholder="Индекс" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Улица" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="col-6">
+                      <div class="col-11">
+                        <div class="form-group">
+                          <input type="text" placeholder="Дом" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Кв./офис" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-docs flex flex-va-center flex-wrap flex-justify-between">
+                    <span>
+                      Загрузить реквизиты
+                    </span>
+                    <label for="upload_doc" class="btn">
+                      Выбрать
+                    </label>
+                    <input id="upload_doc" type="file">
+                  </div>
+                  <div class="line"></div>
+                  <div class="order-delivery flex flex-va-center flex-wrap flex-justify-between">
+                    <span>
+                      Доставка:
+                    </span>
+                    <span class="price">
+                      1 200 <i class="rub">a</i>
+                    </span>
+                  </div>
+                  <div class="order-total flex flex-va-center flex-wrap flex-justify-between">
+                    <span>
+                      Итого:
+                    </span>
+                    <span class="price">
+                      17 785 <i class="rub">a</i>
+                    </span>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn" value="Заказать">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row flex flex-justify-between">
+        <div class="footer-col">
+          <div class="footer-col__title">
+            Каталог
+          </div>
+          <ul class="footer__menu">
+            <li>
+              <a href="#">
+                Барное оборудование
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Вентиляционное оборудование
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Весовое оборудование
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Гастроемкости и аксессуары
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">
+
+          </div>
+          <ul class="footer__menu">
+            <li>
+              <a href="#">
+                Запасные части
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Кофемашины и аксессуары
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Линии раздачи питания
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Вспомогательное оборудование
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col text-center">
+          <img src="/img/footer-logo.png" alt="Логотип">
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">
+            Клиентам
+          </div>
+          <ul class="footer__menu">
+            <li>
+              <a href="#">
+                О компании
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Установка и сервис
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Гарантия
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Конфиденциальность
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">
+            Клиентам
+          </div>
+          <div class="footer__contacts">
+            <a href="tel:+74957878785" class="footer__tel">
+              8 (495) 78-78-78-5
+            </a>
+            <br>
+            <a href="mailto:info@magazin-restoran.ru" class="footer__mail">
+              info@magazin-restoran.ru
+            </a>
+            <br>
+            <span class="footer__address">
+              115088, г. Москва, ул. Угрешская д.2/1 4 этаж, офис 408.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-col">
+          <div class="footer__copyright">
+            © 2012-2018 "Био Ритейл Групп"
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+
+</html>
