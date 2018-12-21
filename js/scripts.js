@@ -1,11 +1,17 @@
 $(document).ready(function() {
 
   // tabs
-  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-    console.log("aaa");
+  $('.tabs:not(.vertical) > ul.tabs__caption').on('click', 'li:not(.active)', function() {
     $(this)
       .addClass('active').siblings().removeClass('active')
       .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
+  // tabs vacancy
+  $('.tabs.vertical ul.tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.vacancy').find('div.vacancy__tabs-content div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   });
 
   // owl carousel

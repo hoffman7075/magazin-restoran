@@ -69,6 +69,14 @@ table {
   margin-bottom: 10px;
   display: block;
 }
+.title-gray {
+  color: #58585a;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
 .flex {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1465,4 +1473,35 @@ footer a:hover {
 }
 .contacts .contact-mail:hover {
   color: #58585a;
+}
+.vacancy .tabs.vertical .tabs__caption li {
+  margin: 0;
+  color: #58585a;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: none;
+  padding-right: 80px;
+  margin: 30px 0;
+}
+.vacancy .tabs.vertical .tabs__caption li:first-child {
+  margin-top: 0;
+}
+.vacancy .tabs.vertical .tabs__caption li:last-child {
+  margin-botom: 0;
+}
+.vacancy .tabs.vertical .tabs__caption li span {
+  font-size: 30px;
+}
+.vacancy .tabs.vertical .tabs__caption li.active {
+  color: #5c7b97;
+  background-image: url("../img/arrow-vacancy.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.vacancy .tabs.vertical .tabs__caption li:hover {
+  color: #5c7b97;
+}
+.vacancy .tabs__content p {
+  text-transform: uppercase;
 }

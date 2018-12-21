@@ -89,6 +89,15 @@ table {
   display: block;
 }
 
+.title-gray {
+  color: @gray-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
 .flex {
   .flex-block();
 }
@@ -1844,6 +1853,51 @@ footer {
       &:hover {
         color: @gray-color;
       }
+    }
+  }
+}
+
+.vacancy {
+  .tabs.vertical {
+    .tabs__caption {
+      li {
+        margin: 0;
+        color: @gray-color;
+        font-size: 24px;
+        font-weight: 600;
+        border-bottom: none;
+        padding-right: 80px;
+        margin: 30px 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-botom: 0;
+        }
+
+        span {
+          font-size: 30px;
+        }
+
+        &.active {
+          color: @blue-color;
+          background-image: url("../img/arrow-vacancy.png");
+          background-position: right center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &:hover {
+          color: @blue-color;
+        }
+      }
+    }
+  }
+  .tabs__content {
+    p {
+      text-transform: uppercase;
     }
   }
 }
