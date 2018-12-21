@@ -219,7 +219,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   color: #58585a;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .tabs__caption {
   list-style: none;
@@ -705,7 +705,7 @@ footer a:hover {
   color: #5c7b97;
   font-weight: normal;
 }
-.clients {
+.main-clients {
   margin-top: 40px;
   margin-bottom: 70px;
 }
@@ -1504,4 +1504,63 @@ footer a:hover {
 }
 .vacancy .tabs__content p {
   text-transform: uppercase;
+}
+.blue {
+  color: #5c7b97;
+}
+.clients {
+  margin-bottom: 60px;
+}
+.clients h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.clients .show-more {
+  border-bottom: 1px dashed #5c7b97;
+  color: #5c7b97;
+  display: initial;
+  margin: 25px 0;
+}
+.clients .show-more:hover {
+  border-bottom: 1px dashed #58585a;
+  color: #58585a;
+}
+.clients .show-more.hide {
+  display: none;
+}
+.clients .line {
+  margin-bottom: 60px;
+}
+.clients .hidden-text {
+  display: none;
+}
+.clients .show-more-block.active .show-more:not(.hide) {
+  display: none;
+}
+.clients .show-more-block.active .show-more.hide {
+  display: initial;
+}
+.clients-projects .project-slide {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clients-projects .project-slide > a > img {
+  opacity: 0;
+}
+.clients-projects .project-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  max-width: 45%;
+  padding: 10px 20px;
+  min-height: 55px;
+}
+.clients-projects .project-zoom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  padding: 15px;
 }

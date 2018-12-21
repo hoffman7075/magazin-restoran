@@ -15,16 +15,25 @@ $(document).ready(function() {
   });
 
   // owl carousel
-  if ($(".owl-carousel").length > 0) {
+  if ($(".products-slider").length > 0) {
     $(".products-slider").owlCarousel({
       items: 4,
       autoplay: true,
       dots: true
     });
+  }
 
+  if ($(".clients-slider").length > 0) {
     $(".clients-slider").owlCarousel({
       items: 5,
       autoplay: true,
+      dots: true
+    });
+  }
+
+  if ($(".clients-projects").length > 0) {
+    $(".clients-projects").owlCarousel({
+      items: 1,
       dots: true
     });
   }
@@ -145,5 +154,13 @@ $(document).ready(function() {
         wheelSpeed: 2
       }
     );
+  }
+
+  // show more
+  if ($(".show-more-block").length > 0) {
+    $(".show-more").on("click", function() {
+      $(".show-more-block").toggleClass("active");
+      $(".show-more-block+.hidden-text").slideToggle();
+    });
   }
 });

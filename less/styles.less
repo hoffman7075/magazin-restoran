@@ -235,7 +235,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   color: @gray-color;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .tabs {
@@ -859,7 +859,7 @@ footer {
   }
 }
 
-.clients {
+.main-clients {
   margin-top: 40px;
   margin-bottom: 70px;
 }
@@ -1895,9 +1895,85 @@ footer {
       }
     }
   }
+
   .tabs__content {
     p {
       text-transform: uppercase;
     }
+  }
+}
+
+.blue {
+  color: @blue-color;
+}
+
+.clients {
+  margin-bottom: 60px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .show-more {
+    border-bottom: 1px dashed @blue-color;
+    color: @blue-color;
+    display: initial;
+    margin: 25px 0;
+
+    &:hover {
+      border-bottom: 1px dashed @gray-color;
+      color: @gray-color;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  .line {
+    margin-bottom: 60px;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  .show-more-block.active {
+    .show-more:not(.hide) {
+      display: none;
+    }
+
+    .show-more.hide {
+      display: initial;
+    }
+  }
+}
+
+.clients-projects {
+  .project-slide {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    > a > img {
+      opacity: 0;
+    }
+  }
+  .project-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    max-width: 45%;
+    padding: 10px 20px;
+    min-height: 55px;
+  }
+  .project-zoom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    padding: 15px;
   }
 }
