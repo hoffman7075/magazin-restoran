@@ -1569,6 +1569,13 @@ footer a:hover {
   text-align: center;
 }
 .reviews-list .review img {
+  border: 36px solid #271b0f;
+  border-image: url(../img/border-review-small.png) 36 round;
+}
+.reviews-view .fancybox-content {
   border: 37px solid #271b0f;
-  border-image: url(../img/border-review-small.png) 37 round;
+  border-image: url(../img/border-review.png) 37 round;
+}
+.reviews-view .fancybox-navigation .fancybox-button {
+  background: none;
 }

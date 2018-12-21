@@ -163,4 +163,25 @@ $(document).ready(function() {
       $(".show-more-block+.hidden-text").slideToggle();
     });
   }
+
+  // fancybox reviews
+  if ($('[data-fancybox="reviews"]').length > 0) {
+    $('[data-fancybox="reviews"]').fancybox({
+      baseClass: "reviews-view",
+      wheel: false,
+      buttons: [
+        "close"
+      ],
+      btnTpl: {
+        arrowLeft:
+          '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
+          '<div><img src="/img/fancybox-left.png" /></div>' +
+          "</button>",
+        arrowRight:
+          '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
+          '<div><img src="/img/fancybox-right.png" /></div>' +
+          "</button>",
+        }
+    });
+  }
 });
