@@ -663,6 +663,7 @@ footer {
     a {
       width: 100%;
       height: 100%;
+      .transition();
     }
 
     .main-banner__text {
@@ -679,6 +680,12 @@ footer {
         padding: 0 70px;
         width: 67%;
         min-height: 200px;
+      }
+    }
+
+    &.hovered&:hover {
+      a {
+        background: rgba(0, 0, 0, 0.5);
       }
     }
   }
