@@ -164,7 +164,7 @@ $(document).ready(function() {
     });
   }
 
-  // fancybox reviews
+  // fancybox
   if ($('[data-fancybox="reviews"]').length > 0) {
     $('[data-fancybox="reviews"]').fancybox({
       baseClass: "reviews-view",
@@ -185,15 +185,22 @@ $(document).ready(function() {
     });
   }
 
+  if ($('[data-fancybox="ajax-gallery"]').length > 0) {
+    $('[data-fancybox="ajax-gallery"]').fancybox({
+      baseClass: "ajax-view",
+      wheel: false,
+      buttons: [
+        "close"
+      ]
+    });
+  }
+
   // styling upload button
   if ($("input[type='file']").length > 0) {
     $("input[type='file']").on("change", function() {
       var file = $(this).val();
       file = file.replace(/\\/g, '/').split ('/').pop ();
       $(this).parents(".order-docs").append('<p>Имя файла: ' + file + '</p>');
-      // var file = document.getElementById ('uploaded-file').value;
-      // file = file.replace (/\\/g, «/»).split ('/').pop ();
-      // document.getElementById ('file-name').innerHTML = 'Имя файла: ' + file;
     });
   }
 });
