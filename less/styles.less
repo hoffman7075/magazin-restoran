@@ -307,6 +307,27 @@ h2 {
   width: auto;
 }
 
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  .bx-pager {
+    .bx-pager-link {
+      width: 10px;
+      height: 10px;
+      background-color: #ced7e0 !important;
+      border-radius: 50% !important;
+      &.active {
+        width: 13px;
+        height: 13px;
+        background-color: #5d7b98 !important;
+      }
+    }
+  }
+  .bx-pager-item {
+    vertical-align: middle;
+  }
+}
+
 .inner {
   margin-bottom: 30px;
 
@@ -653,7 +674,6 @@ footer {
   }
 
   &__col {
-    width: 50%;
     background-repeat: no-repeat;
 
     &.col-wrapper {

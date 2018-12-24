@@ -275,6 +275,24 @@ h2 {
 .owl-carousel .owl-item img {
   width: auto;
 }
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+}
+.bx-wrapper .bx-pager .bx-pager-link {
+  width: 10px;
+  height: 10px;
+  background-color: #ced7e0 !important;
+  border-radius: 50% !important;
+}
+.bx-wrapper .bx-pager .bx-pager-link.active {
+  width: 13px;
+  height: 13px;
+  background-color: #5d7b98 !important;
+}
+.bx-wrapper .bx-pager-item {
+  vertical-align: middle;
+}
 .inner {
   margin-bottom: 30px;
 }
@@ -540,7 +558,6 @@ footer a:hover {
   height: 50%;
 }
 .main-banner__col {
-  width: 50%;
   background-repeat: no-repeat;
 }
 .main-banner__col.col-wrapper {
